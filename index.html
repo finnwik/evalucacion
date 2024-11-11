@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victoria´s Portofile</title>
+</head>
+  <style>
+    
+     .navbar-custom {
+      background-color: #b6aee6;
+
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Estilos de las secciones */
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 50px;
+      text-align: center;
+      position: relative;
+    }
+
+    .section-white {
+      background-color: #fff;
+      color: #000;
+      
+    }
+
+    .section-black {
+      background-color: #000;
+      color: #fff;
+      
+    }
+
+    /* Estilos de la ilustración y el texto */
+  
+    .text-content {
+      max-width: 300px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid currentColor;
+      background: none;
+      color: inherit;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    /* INVESTIGACION */
+    .imagen-circular {
+    width: 120px; 
+    height: 120px;
+    border-radius: 50%; /* Esto hace que la imagen sea circular */
+    object-fit: cover; /* Ajusta la imagen para que se vea bien dentro del círculo */
+}
+  /* Línea amarilla */
+  hr {
+            border: 0;
+            height: 3px;
+            background-color: rgb(255, 204, 0);
+            /* Amarillo */
+            width: 100%;
+            margin: 0px auto;
+
+        }
+   
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            padding: 10px;
+            color: aliceblue;
+        }
+
+        .gallery-item {
+            flex: 1 1 calc(25% - 40px);
+            /* 4 columnas en pantallas grandes */
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            border-radius: 10px;
+        }
+
+        /* INVESTIGACION */
+        .gallery-item:hover img {
+            transform: scale(1.1);
+            /* Ampliar la imagen al pasar el cursor */
+            opacity: 0.8;
+            /* Reducir la opacidad al pasar el cursor */
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+            /* Sombra con hover */
+        }
+
+        .gallery-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover::before {
+            opacity: 1;
+        }
+        p{
+          color: #fff;
+          font-style: none;
+        }
+  </style>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <br>
+                <li class="nav-item"><a class="nav-link" href="#presentacion">Presentación</a></li>
+                <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
+                <li class="nav-item"><a class="nav-link" href="#educacion">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <hr width="100%">
+<!-- investigacion para importar una font size -->
+
+</header>
+<body>
+
+
+  <!-- Sección 1 -->
+   <section id="presentacion">
+    <div class="section section-white" > 
+        <img src="https://i.pinimg.com/564x/ef/d6/4f/efd64f966c6753d887a36293ecb0b3a2.jpg" alt="Octopus">
+        <div class="text-content">
+            <img src="https://i.pinimg.com/564x/47/8c/78/478c78acfd35822a9508f7669c81ffc8.jpg" alt="Imagen circular" class="imagen-circular">
+          <div class="title">Victoria Guerra</div>
+          <div class="description">Estudiante de ultimo año en el colegio AVR, sociable y dedicado individual con experiencia en trabajo en equipo y habilidades en idiomas, ventas y emprendimiento. Busco oportunidades para contribuir y crecer en un entorno dinámico. Voluntaria en animales unidos(2024-activo), Voluntaria en SDV(plantacion de arboles en lugares urbanos)</div>
+          <a href="#presentacion" class="button">Presentación</a>
+        </div>
+        
+   </section>
+ 
+    
+  </div>
+
+  <!-- Sección 2 -->
+   <section id="habilidades">
+    <div class="section section-black">
+        <div class="text-content">
+          <div class="title">Habilidades</div>
+          <div class="description">- Comunicación esertiva
+            - Idiomas: Inglés (C1), Italiano (A1)
+            - Habilidades artísticas en pintura y música
+            - Ventas y atención al cliente
+            - Emprendimiento
+            -lenguaje de señas (A2)
+            
+        </div>
+          <a href="#habilidades" class="button">certificados</a>
+        </div>
+        <img src="C:\Users\ASUS\Downloads\2b050d083382ab717f382144968b8153-removebg-preview.png">
+        
+      </div>
+
+   </section>
+
+<section id="proyectos">
+  <!-- Sección 3 -->
+  <div class="section section-white">
+    <img src="https://i.pinimg.com/564x/09/50/78/0950780f52f369eefa3f4dc11df6a412.jpg" alt="Whale">
+    <div class="text-content">
+      <div class="title">Proyectos</div>
+      <div class="description">- Miembro activo de los Scouts de Bolivia.
+        - Certificados en actividades como Triatlón 2022 Pioneros, Carrera de Proyectos 2022 y Regata 2022.
+        - Participación en clases de programación inicial con Python en TechLab Bolivia.
+        - Certificado de actuación sobresaliente en El Martadero.- Habilidades artísticas en pintura y música.
+        - Participación en el equipo sub-16 de béisbol en Quillacollo.
+        - Tercer lugar en el concurso de oratoria en el Colegio AVR. Participante en BETCON 2024</div>
+      <a href="#proyectos" class="button">Proyectos</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="educacion">
+    <div class="section section-black" >
+        <div class="text-content">
+          <div class="title">Educacion</div>
+          <div class="description">Título de Elash - CollageBoard 
+            - Calificación: 112- Año de obtención: 2018
+            Estudios en artes graficas - Arte Urquidi
+            Enero 2015- 2017
+            Estudios en artes escenicas - El martadero
+            noviembre 2018-2020
+            Estudios en idiomas (italiano basico) - sogno nel cassetto
+            julio 2021 - octubre 2021</div>
+          <a href="#educacion" class="button">Links</a>
+        </div>
+        <img src="c:\Users\ASUS\Downloads\6d7b8f65a78f7d37399d6f357475924d-removebg-preview.png" height="500px" width="700px" alt="Jellyfish">
+        <img src="" alt="">
+      </div>
+
+</section>
+
+<section id="contacto">
+    <!-- Sección 3 -->
+    <div class="section section-white">
+        <img src="https://i.pinimg.com/564x/c0/8a/98/c08a988f5fb65c4cb40ce75fe778c58a.jpg" >
+    <div class="text-content">
+        <div class="title">contacto</div>
+        <form>
+        
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+            </div>
+            <button type="button" class="btn btn-dark">Enviar</button>
+        </form>
+        </div>
+        
+    </div>
+  
+    </div>
+  </section>
+  <section id="educacion">
+    <div class="section section-black" >
+      <div class="gallery">
+        <div class="gallery-item">
+            <a href="https://www.nationalgeographic.com.es/ciencia/descubren-terrible-dinosaurio-depredador-que-vivio-casi-100-anos-antes-que-t-rex_23114">
+                <img src="https://calrei.barcelona/wp-content/uploads/2024/02/mantillas-y-sudaderos-equitacion-3.jpg"
+                alt="Imagen 1">
+                <p> En mis tiempos libres me gusta hacer equitacion, amo los caballos y entreno los dias sabados, mi caballo era cafe</p>
+            </a>
+           
+        </div>
+        <div class="gallery-item">
+            <a href="https://www.nationalgeographic.com.es/ciencia/esto-es-que-significa-que-se-hayan-encontrado-huellas-dinosaurios-identicas-a-ambos-lados-atlantico_23094">
+                <img src="https://itequia.com/wp-content/uploads/2023/09/html5-editor-desarrollo-sitios-web-codigo-html-sitio-web-foto-primer-plano-pantalla-portatil-scaled.jpg">
+                <p>Actualmente estoy estudiando la carrera de ing en sistemas, de segundo semestre</p>
+            </a>
+           
+        </div>
+        <div class="gallery-item">
+            <a href="https://www.nationalgeographic.com.es/ciencia/descubren-nuevo-dinosaurio-cretacico-espana-y-ha-recibido-este-peculiar-nombre_23167">
+                <img src="https://www.e-zigurat.com/storage/4244/conversions/1331-default-777x388.jpg"
+                alt="Imagen 3">
+                <p>Estudio la carrera de historia en la UMSS, mi acontecimeinto favorito son las dinastias chinas</p>
+            </a>
+           
+        </div>
+    </div>
+       
+      </div>
+
+</section>
+  <!-- Sección 4 -->
+  
+</body>
+</html>
